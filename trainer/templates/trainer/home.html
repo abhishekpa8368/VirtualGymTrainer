@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Virtual Gym Trainer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    main {
+      flex: 1;
+    }
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-black text-white p-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <img alt="Logo with the name Abhishekpal and a gym icon" class="h-10 w-10 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/VX9WgB5vIS6IA9pNWYDFJEtz40zFxq914OHtt57Aa8FwgP8E.jpg" width="50"/>
+      <span class="text-xl font-bold">Virtual Gym Trainer</span>
+    </div>
+   <nav>
+  <a class="mx-2 hover:underline" href="#">Home</a>
+  <a class="mx-2 hover:underline" href="#">Posture Tracking</a>
+  <a class="mx-2 hover:underline" href="{% url 'WhyUs' %}">Why Us</a>
+  <a class="mx-2 hover:underline" href="{% url 'AboutUs' %}">About Us</a>
+  <a class="mx-2 hover:underline" href="{% url 'ContactUs' %}">Contact Us</a>
+</nav>
+  </header>
+  <main class="container mx-auto p-4">
+    <section class="text-center my-8">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Virtual Gym Trainer</h1>
+      <p class="text-lg mb-6">Track your posture and get fitness advice!</p>
+      <a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="{% url 'start_posture_tracking' %}">Start Posture Tracking</a>
+    </section>
+    <section class="my-8">
+      <h2 class="text-3xl font-bold mb-4 text-center">Need some fitness advice?</h2>
+      <p class="text-lg mb-6 text-center">Chat with our Virtual Trainer to get personalized tips based on your goals!</p>
+      <div class="text-center">
+        <a class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="{% url 'chatbot_page' %}">Chat with Trainer</a>
+      </div>
+    </section>
+    <section class="my-8">
+      <h2 class="text-3xl font-bold mb-4 text-center">Our AI Gym Trainer</h2>
+      <div class="flex justify-center space-x-4">
+        <div class="w-1/3">
+          <img alt="AI Gym Trainer demonstrating a workout pose" class="rounded shadow" height="200" src="https://storage.googleapis.com/a1aa/image/2cf9bIIwgRRRHyfdfD7ERgDy9kH8hVe0sByeQnjn8muJYwHeE.jpg" width="300"/>
+        </div>
+        <div class="w-1/3">
+          <img alt="AI Gym Trainer providing fitness advice" class="rounded shadow" height="200" src="https://storage.googleapis.com/a1aa/image/nOSl3exyzx3kHaJAiwlLixV4PWflkmDHzsH8Cm9if5CEG8hnA.jpg" width="300"/>
+        </div>
+        <div class="w-1/3">
+          <img alt="AI Gym Trainer showing correct posture" class="rounded shadow" height="200" src="https://storage.googleapis.com/a1aa/image/MJwhuM2i03a6MhGgjT8lQg8E68eV1rFkoBh6202Gu5XfCehnA.jpg" width="300"/>
+        </div>
+      </div>
+    </section>
+    <section class="my-8">
+      <h2 class="text-3xl font-bold mb-4 text-center">Benefits of Regular Exercise</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Exercise Benefits Section Content -->
+      </div>
+    </section>
+    <section class="my-8">
+      <h2 class="text-3xl font-bold mb-4 text-center">Inspirational Quotes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Inspirational Quotes Section Content -->
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black -500 text-white p-4 text-center">
+    <p>Website made by Abhishekpal</p>
+    <p>Location: Ghaziabad, UP, India</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a class="hover:underline" href="https://github.com/abhishekpa8368"><i class="fab fa-github"></i> GitHub</a>
+      <a class="hover:underline" href="https://www.linkedin.com/in/abhishekpa8368"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
